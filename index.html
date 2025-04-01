@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/style.css">
+    <title>project </title>
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()"> Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+    
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+           
+    
+    </div>
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        <div class="flex-box-container-2" id="flex-cat-gen">
+            <div>
+               <img src="https://cataas.com/cat?height=150" alt="">
+               
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors </h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThS5so6j3TLQbjXyXP5jziIgqcwhk6yKQf4w&s" height=150 width=150 alt="" id=rock onclick="rpsGame(this)">
+            <img src="https://th.bing.com/th/id/OIP.RpDB0RqNcFrI5cX9KGK3IQHaGO?w=209&h=180&c=7&r=0&o=5&dpr=2&pid=1.7" height=150 width=150 alt="" id=paper onclick="rpsGame(this)">
+            <img src="https://th.bing.com/th/id/OIP.oE5Sm7RxAKiN_fk0TqTbkgHaID?rs=1&pid=ImgDetMain" height=150 width=150 alt="" id=scissors onclick="rpsGame(this)">
+        </div>
+
+
+    </div>
+
+    <div>
+        <div class="container-4">
+            <h2 id="change-my-color">Challenge 4:Change the Color of All Buttons!</h2>
+            <div class="flex-box-pick-color">
+                <form action="">
+                    <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                        <option value="random">Random</option>
+                        <option value="red">Red</option>
+                        <option value="green">green</option>
+                        <option value="reset">Reset</option>
+                    </select>
+                </form>
+                <button class="btn btn-primary">Wee!</button>
+                <button class="btn btn-danger">Yahoo!</button>
+                <button class="btn btn-warning">Google!</button>
+                <button class="btn btn-success">Facebook!</button>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <div class="container-5">
+            <h2>Challenge 5:Blackjack</h2>
+            <h3><span id="blackjack-result" style="color:black;">Let's play</span></h3>
+            <div class="flex-blackjack-row-1">
+                <div id="your-box">
+                    <h2>You: <span id="your-blackjack-result">0</span></h2></div>
+                <div id="dealer-box">
+                    <h2>Dealer:
+                        <span id="dealer-blackjack-result">0</span>
+                    </h2></div>  
+
+            </div>
+
+
+            <div class="flex-blackjack-row-2">
+                <div>
+                    <button class="btn-lg btn-primary mr-2" id="Blackjack-hit-button">Hit</button>
+                    <button class="btn-lg btn-warning mr-2" id="Blackjack-stand-button">Stand</button>
+                    <button class="btn-lg btn-danger mr-2" id="Blackjack-deal-button">Deal</button>
+                </div>
+
+            </div>
+
+            <div class="flex-blackjack-row-3">
+                <table style="border:1px black;">
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                            <td><span id="Wins">0</span></td>
+                            <td><span id="Losses">0</span></td>
+                            <td><span id="Draws">0</span></td>
+
+                    </tr>
+                </table>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    
+    <script src='static/js/script.js'></script>
+</body>
+</html> 
+
